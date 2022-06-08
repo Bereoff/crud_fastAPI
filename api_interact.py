@@ -4,10 +4,10 @@ import requests
 url = "http://127.0.0.1:8000/users"
 
 payload = {
-    "nome": "André da Silva",
-    "idade": 37,
-    "email": "teste@teste.com.br",
-    "telefone": "(41)97894-7894"
+    "nome": "",
+    "idade": null,
+    "email": "",
+    "telefone": ""
 }
 
 
