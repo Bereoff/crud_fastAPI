@@ -57,7 +57,7 @@ def get_user(id):
             "telefone":user[0][4]
             }
 
-@app.post('/users/')
+@app.post('/users')
 def create_user(user: User):
     user = database.create_user(user)
     return  {"message":"user created", "code":"200"}
