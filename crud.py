@@ -11,14 +11,19 @@ class database:
             print(e)
 
     def find_all():
-        cursor.execute("SELECT * FROM usuario ORDER BY id;")
-        return cursor.fetchall()
+        try:
+            cursor.execute("SELECT * FROM usuario ORDER BY id;")
+            return cursor.fetchall()
+        except Exception as e:
+            print(e)
 
 
     def find_user(id):
-        cursor.execute(f"SELECT * FROM usuario WHERE id={id};")
-        return cursor.fetchall()
-
+        try:
+            cursor.execute(f"SELECT * FROM usuario WHERE id={id};")
+            return cursor.fetchall()
+        except Exception as e:
+            print(e)
 
     def update_user(id, user):
         try:
