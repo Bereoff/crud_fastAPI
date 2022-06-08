@@ -1,7 +1,7 @@
 import requests
 
 # interação com outra API
-url = "http://127.0.0.1:8000/users"
+url = ""
 
 payload = {
     "nome": "",
